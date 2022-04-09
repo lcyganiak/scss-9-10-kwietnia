@@ -91,9 +91,12 @@
     line-height: 1.2;
 
     &:hover {
-        text-decoration: underline;  /*overline; line-through  (underline overline;) wypróbuj*/
+     text-decoration: underline;  /*overline; line-through  (underline overline;) wypróbuj*/
+
+
     }
     &:focus-visible {
         outline-offset: 4px;
     }
 }
+
