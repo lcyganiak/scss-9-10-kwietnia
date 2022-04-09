@@ -1,0 +1,42 @@
+@import './tokens';
+
+@mixin descriptionNameMixin {
+    color: $font-color-2;
+    font-size: $font-size-m;
+}
+
+@mixin titleNameMixin($level) {
+    margin: 0 0 15px 0;
+    line-height: 1.5;
+    color: $font-color-1;
+    text-align: center;
+    @if($level == 1) {
+        font-size: $font-size-title-1;
+    } @else if($level == 2) {
+        font-size: $font-size-title-2;
+    } @else {
+        font-size: $font-size-title-3;
+    }
+}
+
+@mixin titleNameMixinWithOutParametr {
+    margin: 0 0 15px 0;
+    line-height: 1.5;
+    color: $font-color-1;
+    text-align: center;
+}
+
+@mixin btnMainNameMixin {
+    background-color: transparent;
+    border: none;
+    padding: 12px 26px;  /* przy dwóch parametrach pierwszy ustala padding góra i  dół, drugi lewa i prawa. Ta sama zasada dla margin*/
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    font-size: $font-size-m;
+    cursor: pointer;
+    color: $font-color-3;
+    border-radius: 4px;
+
+}

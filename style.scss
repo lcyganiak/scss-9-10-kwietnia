@@ -1,0 +1,74 @@
+@import './tokens';
+@import './mixin';
+
+.main-nav {
+    background-color: whitesmoke;
+
+    .list-nav {
+        .list-liNav {
+            display: inline-block;
+            width: 20%;
+
+        }
+    }
+}
+
+.main-header {
+    .title {
+        @include titleNameMixin(1);
+        /* 
+            użycie mixin z przekazaniem parametru. 
+            Wymaga doania logiki obsułu w samym mixin. 
+            Patrz @mixin titleNameMixin($level)
+        */
+    }
+
+    .description {
+        @include descriptionNameMixin;
+    }
+}
+
+.main-section {
+    .title {
+        @include titleNameMixinWithOutParametr;
+        &--2 {
+            font-size: $font-size-title-2;
+            /*
+                & to powielenie zazwy selektora z rodzica 
+                np. 
+                .rodzic {
+                    &--tata 
+                }
+                tworzy selektor .rodzic--tata
+            */
+        }
+    }
+
+    .description {
+        @include descriptionNameMixin;
+    }
+}
+
+.footer-button {
+    .btnMain {
+        @include btnMainNameMixin;
+        &--primary {
+            background-color: $color-primary;
+            &:hover {
+                background-color: $color-primary-hover;
+            }
+            &:focus-visible {
+                outline: none;
+                box-shadow: $box-shadow-primary;
+            }
+            &:focus {
+                outline: none;
+                box-shadow: $box-shadow-primary;
+            }
+        }
+        &--secondary {
+            background-color: $color-secondary;
+        }
+    }
+
+}

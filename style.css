@@ -1,1 +1,91 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@charset "UTF-8";
+.main-nav {
+  background-color: whitesmoke;
+}
+
+.main-nav .list-nav .list-liNav {
+  display: inline-block;
+  width: 20%;
+}
+
+.main-header .title {
+  margin: 0 0 15px 0;
+  line-height: 1.5;
+  color: #1e1b1b;
+  text-align: center;
+  font-size: 46px;
+  /* 
+            użycie mixin z przekazaniem parametru. 
+            Wymaga doania logiki obsułu w samym mixin. 
+            Patrz @mixin titleNameMixin($level)
+        */
+}
+
+.main-header .description {
+  color: rgba(30, 27, 27, 0.678);
+  font-size: 16px;
+}
+
+.main-section .title {
+  margin: 0 0 15px 0;
+  line-height: 1.5;
+  color: #1e1b1b;
+  text-align: center;
+}
+
+.main-section .title--2 {
+  font-size: 35px;
+  /*
+                & to powielenie zazwy selektora z rodzica 
+                np. 
+                .rodzic {
+                    &--tata 
+                }
+                tworzy selektor .rodzic--tata
+            */
+}
+
+.main-section .description {
+  color: rgba(30, 27, 27, 0.678);
+  font-size: 16px;
+}
+
+.footer-button .btnMain {
+  background-color: transparent;
+  border: none;
+  padding: 12px 26px;
+  /* przy dwóch parametrach pierwszy ustala padding góra i  dół, drugi lewa i prawa. Ta sama zasada dla margin*/
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #f7f1f1;
+  border-radius: 4px;
+}
+
+.footer-button .btnMain--primary {
+  background-color: #007bff;
+}
+
+.footer-button .btnMain--primary:hover {
+  background-color: #0069d9;
+}
+
+.footer-button .btnMain--primary:focus-visible {
+  outline: none;
+  -webkit-box-shadow: 0px 0px 0px 3px rgba(0, 255, 2, 0.5);
+          box-shadow: 0px 0px 0px 3px rgba(0, 255, 2, 0.5);
+}
+
+.footer-button .btnMain--primary:focus {
+  outline: none;
+  -webkit-box-shadow: 0px 0px 0px 3px rgba(0, 255, 2, 0.5);
+          box-shadow: 0px 0px 0px 3px rgba(0, 255, 2, 0.5);
+}
+
+.footer-button .btnMain--secondary {
+  background-color: #6c757d;
+}
+/*# sourceMappingURL=style.css.map */
