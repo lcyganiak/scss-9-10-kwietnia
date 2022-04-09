@@ -8,12 +8,15 @@
         .list-liNav {
             display: inline-block;
             width: 20%;
-
+            a {
+               @include anchorNameMixin; 
+            }
         }
     }
 }
 
 .main-header {
+    margin-top: $margin-top;
     .title {
         @include titleNameMixin(1);
         /* 
@@ -29,6 +32,7 @@
 }
 
 .main-section {
+    margin-top: $margin-top;
     .title {
         @include titleNameMixinWithOutParametr;
         &--2 {
@@ -52,25 +56,26 @@
 .footer-button {
     .btnMain {
         @include btnMainNameMixin;
-        &--primary {
-            background-color: $color-primary;
-            &:hover {
-                background-color: $color-primary-hover;
-            }
-            &:focus-visible {
-                outline: none;
-                box-shadow: $box-shadow-primary;
-            }
-            &:focus {
-                outline: none;
-                box-shadow: $box-shadow-primary;
-            }
+
+    }
+}
+
+.form {
+    margin-top: $margin-top;
+    .fildset-main {
+        border: none;
+        legend {
+
+            padding: 0;
+            font-size: $font-size-l;
+            color: $font-color-1;
         }
-        &--secondary {
-            background-color: $color-secondary;
+        label {
+            display: inline-block;
+            margin-top: 8px;
         }
-        &--success {
-            background-color: $color-success;
+        input {
+            @include inputNameMixin;
         }
     }
 }

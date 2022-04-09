@@ -8,6 +8,25 @@
   width: 20%;
 }
 
+.main-nav .list-nav .list-liNav a {
+  text-decoration: none;
+  color: #1e1b1b;
+  line-height: 1.2;
+}
+
+.main-nav .list-nav .list-liNav a:hover {
+  text-decoration: underline;
+  /*overline; line-through  (underline overline;) wypróbuj*/
+}
+
+.main-nav .list-nav .list-liNav a:focus-visible {
+  outline-offset: 4px;
+}
+
+.main-header {
+  margin-top: 25px;
+}
+
 .main-header .title {
   margin: 0 0 15px 0;
   line-height: 1.5;
@@ -24,6 +43,10 @@
 .main-header .description {
   color: rgba(30, 27, 27, 0.678);
   font-size: 16px;
+}
+
+.main-section {
+  margin-top: 25px;
 }
 
 .main-section .title {
@@ -63,6 +86,7 @@
   cursor: pointer;
   color: #f7f1f1;
   border-radius: 4px;
+  /* odkomentuj i zaobacz jak dział, popatz w konsole szukaj w niej przycisków*/
 }
 
 .footer-button .btnMain--primary {
@@ -91,5 +115,58 @@
 
 .footer-button .btnMain--success {
   background-color: #28a745;
+}
+
+.form {
+  margin-top: 25px;
+}
+
+.form .fildset-main {
+  border: none;
+}
+
+.form .fildset-main legend {
+  padding: 0;
+  font-size: 20px;
+  color: #1e1b1b;
+}
+
+.form .fildset-main label {
+  display: inline-block;
+  margin-top: 8px;
+}
+
+.form .fildset-main input {
+  display: block;
+  width: 80%;
+  padding: 4px 8px;
+  font-size: 16px;
+  color: #1e1b1b;
+  background-color: white;
+  border: none;
+  border-bottom: 1px solid #cbc7c7;
+  margin: 15px 0 15px 0;
+}
+
+.form .fildset-main input:focus-visible {
+  outline-offset: 0px;
+  outline: none;
+  border-bottom-color: #28a745;
+}
+
+.form .fildset-main input::-webkit-input-placeholder {
+  font-size: 16px;
+}
+
+.form .fildset-main input:-ms-input-placeholder {
+  font-size: 16px;
+}
+
+.form .fildset-main input::-ms-input-placeholder {
+  font-size: 16px;
+}
+
+.form .fildset-main input::placeholder {
+  font-size: 16px;
 }
 /*# sourceMappingURL=style.css.map */

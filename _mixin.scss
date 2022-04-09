@@ -38,5 +38,62 @@
     cursor: pointer;
     color: $font-color-3;
     border-radius: 4px;
+    &--primary {
+        background-color: $color-primary;
+        &:hover {
+            background-color: $color-primary-hover;
+        }
+        &:focus-visible {
+            outline: none;
+            box-shadow: $box-shadow-primary;
+        }
+        &:focus {
+            outline: none;
+            box-shadow: $box-shadow-primary;
+        }
+    }
+    &--secondary {
+        background-color: $color-secondary;
+    }
+    &--success {
+        background-color: $color-success;
+    }
+    // &::after {
+    //     content: 'masakra dla googla bota';
+    // }
+    /* odkomentuj i zaobacz jak dział, popatz w konsole szukaj w niej przycisków*/
 
+}
+@mixin inputNameMixin {
+    display: block;
+    width: 80%;
+    padding: 4px 8px;
+    font-size: $font-size-m;
+    color: $font-color-1;
+    background-color: white;
+    border: none;
+    border-bottom: 1px solid #cbc7c7;
+    margin: 15px 0 15px 0;
+
+    &:focus-visible {
+        outline-offset: 0px;
+        outline: none;
+        border-bottom-color: $color-success;
+    }
+    &::placeholder {
+        font-size: $font-size-m;
+    }
+}
+
+@mixin anchorNameMixin {
+    text-decoration: none;
+    color: $font-color-1;
+    line-height: 1.2;
+
+    &:hover {
+        text-decoration: underline;  /*overline; line-through  (underline overline;) wypróbuj*/
+    }
+    &:focus-visible {
+        outline-offset: 4px;
+    }
 }
