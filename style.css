@@ -1,11 +1,25 @@
 @charset "UTF-8";
 .main-nav {
   background-color: whitesmoke;
+  position: fixed;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.main-nav .list-nav {
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 .main-nav .list-nav .list-liNav {
   display: inline-block;
-  width: 20%;
+  width: 25%;
+  margin-right: -4px;
 }
 
 .main-nav .list-nav .list-liNav a {
@@ -168,5 +182,30 @@
 
 .form .fildset-main input::placeholder {
   font-size: 16px;
+}
+
+.aboutMe {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.aboutMe .title hr {
+  width: 10%;
+  background-color: red;
+  border: 0;
+  height: 1px;
+}
+
+.aboutMe .foto {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.aboutMe .foto img {
+  width: 100%;
+  height: auto;
 }
 /*# sourceMappingURL=style.css.map */
